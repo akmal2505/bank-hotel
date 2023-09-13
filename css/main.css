@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 1440px;
+  height: 1200px;
+  border: 1px solid;
+  margin: 0 auto;
+  background-color: #313F38;
+}
+.header_nav {
+  width: 100%;
+  height: 5%;
+  border: 1px solid;
+  margin-top: 2%;
+  display: flex;
+}
+.header_nav-logo {
+  width: 15%;
+  height: 100%;
+  border: 1px solid;
+}
+.header_nav-logo h3 {
+  color: white;
+}
+.header_nav-menu {
+  width: 70%;
+  height: 100%;
+  border: 1px solid;
+  margin-left: 15%;
+  display: flex;
+}
+.header_nav-menu p {
+  margin-left: 5%;
+  color: white;
+}
+.header_nav-menu h3 {
+  margin-left: 10%;
+  color: white;
+}
+.header_hero {
+  width: 100%;
+  height: 30%;
+  border: 1px solid;
+  margin-top: 2%;
+  display: flex;
+}
+.header_hero-container1 {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+}
+.header_hero-container1 h1 {
+  font-size: 140px;
+  margin-top: 5%;
+}
+.header_hero-container1 span {
+  color: #FCD043;
+}
+.header_hero-container1 h3 {
+  font-size: 25px;
+  margin-top: 5%;
+  color: #FCD043;
+}
+.header_hero-container2 {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+}
+.header_hero-container2 p {
+  margin-left: 30%;
+  margin-top: 5%;
+  width: 300px;
+  height: 78px;
+  color: white;
+}
+.header_hero-container2-button {
+  width: 250px;
+  height: 70px;
+  border: 1px solid;
+  margin-left: 30%;
+  margin-top: 5%;
+  border-radius: 50px;
+  background-color: #313F38;
+  color: white;
+}
+.header-info {
+  width: 100%;
+  height: 50%;
+  border: 1px solid;
+  background-image: url(../../images/hero_back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-info-button1 {
+  width: 200px;
+  height: 115px;
+  margin-left: 57%;
+  background-color: rgba(49, 63, 56, 0.48);
+  color: white;
+}
+.header-info-button2 {
+  width: 200px;
+  height: 115px;
+  background-color: rgba(49, 63, 56, 0.48);
+  color: white;
+}
+.header-info-button3 {
+  width: 200px;
+  height: 115px;
+  background-color: #FCD043;
+}
+.header-info-add {
+  width: 100%;
+  height: 10%;
+  border: 1px solid;
+  display: flex;
+}
+.header-info-add-container1 {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+}
+.header-info-add-container1 h3 {
+  color: #FCD043;
+  margin-top: 3%;
+}
+.header-info-add-container1 p {
+  color: white;
+}
+.header-info-add-container2 {
+  width: 50%;
+  height: 100%;
+  border: 1px solid;
+}
+.header-info-add-container2 p {
+  color: white;
+  margin-left: 81%;
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+  }
+  .header_nav {
+    width: 100%;
+  }
+  .header_nav-logo {
+    width: 50%;
+  }
+  .header_nav-logo h3 {
+    font-size: 25px;
+  }
+  .header_nav-menu {
+    display: none;
+  }
+  .header_hero-container1 {
+    width: 50%;
+  }
+  .header_hero-container1 h1 {
+    font-size: 81px;
+    margin-top: 15%;
+  }
+  .header_hero-container2 {
+    width: 50%;
+  }
+  .header_hero-container2 p {
+    margin-left: 17%;
+    margin-top: 27%;
+    font-size: 25px;
+  }
+  .header_hero-container2-button {
+    display: none;
+  }
+  .header-info {
+    width: 100%;
+  }
+  .header-info-button1 {
+    margin-left: 23%;
+    margin-top: 58%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    width: 100%;
+  }
+  .header_hero {
+    flex-direction: column;
+    height: 500px;
+  }
+  .header_hero-container1 {
+    width: 100%;
+    text-align: center;
+  }
+  .header_hero-container1 h1 {
+    font-size: 76px;
+  }
+  .header_hero-container2 {
+    width: 100%;
+    text-align: center;
+  }
+  .header_hero-container2 p {
+    margin-left: 11%;
+    margin-top: 15%;
+  }
+  .header-info {
+    background-position: 60%;
+  }
+  .header-info-button1 {
+    display: none;
+  }
+  .header-info-button2 {
+    display: none;
+  }
+  .header-info-button3 {
+    display: none;
+  }
+  .header-info-add {
+    height: 100px;
+    background-color: #313F38;
+  }
+  .header-info-add-container1 {
+    display: none;
+  }
+  .header-info-add-container2 {
+    height: 100px;
+  }
+  .header-info-add-container2 p {
+    margin-left: 5%;
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

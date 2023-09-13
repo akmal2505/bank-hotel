@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$border: 1px solid;
+$margin: 0 auto;
+
+@mixin center{
+  justify-content: center;
+  align-items: center;
+}

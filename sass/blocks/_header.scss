@@ -1,0 +1,237 @@
+@import '../global';
+
+.header{
+  width: 1440px;
+  height: 1200px;
+  border: $border;
+  margin: $margin;
+  background-color: #313F38;
+  &_nav{
+    width: 100%;
+    height: 5%;
+    border: $border;
+    margin-top: 2%;
+    display: flex;
+  }
+  &_nav-logo{
+    width: 15%;
+    height: 100%;
+    border: $border;
+    h3{
+      color: white;
+    }
+  }
+  &_nav-menu{
+    width: 70%;
+    height: 100%;
+    border: $border;
+    margin-left: 15%;
+    display: flex;
+    p{
+      margin-left: 5%;
+      color: white;
+    }
+    h3{
+      margin-left: 10%;
+      color: white;
+    }
+  }
+  &_hero{
+    width: 100%;
+    height: 30%;
+    border: $border;
+    margin-top: 2%;
+    display: flex;
+  }
+  &_hero-container1{
+    width: 50%;
+    height: 100%;
+    border: $border;
+    h1{
+      font-size: 140px;
+      margin-top: 5%;
+    }
+    span{
+      color: #FCD043;
+    }
+    h3{
+      font-size: 25px;
+      margin-top: 5%;
+      color: #FCD043;
+    }
+  }
+  &_hero-container2{
+    width: 50%;
+    height: 100%;
+    border: $border;
+    p{
+      margin-left: 30%;
+      margin-top: 5%;
+      width: 300px;
+      height: 78px;
+      color: white;
+    }
+  }
+  &_hero-container2-button{
+    width: 250px;
+    height: 70px;
+    border: $border;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-radius: 50px;
+    background-color: #313F38;
+    color: white;
+  }
+  &-info{
+    width: 100%;
+    height: 50%;
+    border: $border;
+    background-image: url(../../images/hero_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &-info-button1{
+    width: 200px;
+    height: 115px;
+    margin-left: 57%;
+    background-color:rgba(49, 63, 56, 0.48);
+    color: white;
+  }
+  &-info-button2{
+    width: 200px;
+    height: 115px;
+    background-color:rgba(49, 63, 56, 0.48);
+    color: white;
+  }
+  &-info-button3{
+    width: 200px;
+    height: 115px;
+    background-color: #FCD043;
+  }
+  &-info-add{
+    width: 100%;
+    height: 10%;
+    border: $border;
+    display: flex;
+  }
+  &-info-add-container1{
+    width: 50%;
+    height: 100%;
+    border: $border;
+    h3{
+      color: #FCD043;
+      margin-top: 3%;
+    }
+    p{
+      color: white;
+    }
+  }
+  &-info-add-container2{
+    width: 50%;
+    height: 100%;
+    border: $border;
+    p{
+      color: white;
+      margin-left: 81%;
+      margin-top: 3%;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1000px){
+  .header{
+    width: 100%;
+    &_nav{
+      width: 100%;
+    }
+    &_nav-logo{
+      width: 50%;
+      h3{
+        font-size: 25px;
+      }
+    }
+    &_nav-menu{
+      display: none;
+    }
+    &_hero-container1{
+      width: 50%;
+      h1{
+        font-size: 81px;
+        margin-top: 15%;
+
+      }
+    }
+    &_hero-container2{
+      width: 50%;
+      p{
+        margin-left:17%;
+        margin-top: 27%;
+        font-size: 25px;
+      }
+    }
+    &_hero-container2-button{
+      display: none;
+    }
+    &-info{
+      width: 100%;
+    }
+    &-info-button1{
+      margin-left: 23%;
+      margin-top: 58%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 400px){
+  .header{
+    width: 100%;
+    &_hero{
+      flex-direction: column;
+      height: 500px;
+    }
+    &_hero-container1{
+      width: 100%;
+      text-align: center;
+      h1{
+        font-size: 76px;
+      }
+    }
+    &_hero-container2{
+      width: 100%;
+      text-align: center;
+      p{
+        margin-left: 11%;
+        margin-top: 15%;
+      }
+    }
+    &-info{
+      background-position: 60%;
+    }
+    &-info-button1{
+      display: none;
+    }
+    &-info-button2{
+      display: none;
+    }
+    &-info-button3{
+      display: none;
+    }
+    &-info-add{
+      height: 100px;
+      background-color: #313F38;
+    }
+    &-info-add-container1{
+      display: none;
+    }
+    &-info-add-container2{
+      height: 100px;
+      p{
+        margin-left: 5%;
+        font-size: 25px;
+      }
+    }
+  }
+}
