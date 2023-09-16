@@ -1,1 +1,252 @@
+@import "../global";
+
 // Ulugbek
+
+.gallery__section {
+  padding: 5rem 0;
+  .container {
+    padding: 10rem 0;
+    width: 100%;
+    display: flex;
+    @include center;
+    flex-direction: column;
+    gap: 5rem;
+    background: #313f38;
+    overflow: hidden;
+    .centered__info {
+      width: 100%;
+      position: relative;
+      display: flex;
+      @include center;
+      flex-direction: column;
+      .g__info {
+        max-width: 850px;
+        display: flex;
+        @include center;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1rem;
+        .gallery__logo {
+          width: 100px;
+          height: 100px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .title {
+          font-size: 5rem;
+          font-weight: 400;
+          color: $secondary;
+        }
+
+        .gallery__text {
+          width: 40%;
+          text-align: center;
+          color: #fffcf6;
+          line-height: 1.4;
+        }
+
+        .gallery__img {
+            width: 100%;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .media__img {
+            display: none;
+        }
+
+        .g__expectations {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1rem;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          p {
+            width: 30%;
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #fffcf6;
+          }
+        }
+      }
+      .side__img {
+        position: absolute;
+        width: 250px;
+      }
+      .g__img1 {
+        left: 0;
+        top: 30%;
+      }
+      .g__img2 {
+        right: 0;
+        top: 30%;
+      }
+      .g__img3 {
+        left: 1%;
+        bottom: 0%;
+      }
+      .g__img4 {
+        right: 1%;
+        bottom: -15%;
+      }
+    }
+
+    .g__long-text {
+        width: 2000px;
+        font-size: 6rem;
+        letter-spacing: 1px;
+        color: #FFFCF61F;
+        span {
+            color: #fff;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+    .gallery__section {
+        .container {
+            .centered__info {
+                .g__info {
+                    width: 600px;
+                    gap:1rem;
+                }
+                .side__img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .gallery__section {
+        .container {
+            .centered__info {
+                .g__info {
+                    gap:1rem;
+                }
+                .side__img {
+                    display: none;
+                }
+            }
+            .g__long-text {
+                width: 1000px;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .gallery__section {
+        .container {
+            .centered__info {
+                .g__info {
+                    width: 500px;
+                    gap:1rem;
+
+                    .title {
+                        font-size: 4rem;
+                    }
+                    .gallery__text {
+                        width: 60%;
+                    }
+                    .g__expectations {
+                        p {
+                            width: 50%;
+                        }
+                    }
+                }
+                .side__img {
+                    display: none;
+                }
+            }
+            .g__long-text {
+                width: 1000px;
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gallery__section {
+        .container {
+            .centered__info {
+                .g__info {
+                    padding: 1rem;
+                    width: 100%;
+                    gap:1rem;
+
+                    .title {
+                        text-align: center;
+                        font-size: 4rem;
+                    }
+                    .gallery__text {
+                        width: 100%;
+                    }
+                    .gallery__img {
+                        display: none;
+                    }
+                    .media__img {
+                        position: relative;
+                        display: block;
+                        height: 600px;
+                        width: 100%;
+                        .side__img {
+                            display: block;
+                            position: absolute;
+                            width: 200px;
+                        }
+                        .g__img1 {
+                            width: 150px;
+                            top: 10%;
+                            left: 0;
+                            z-index: 2;
+                        }
+                        .g__img4 {
+                            right: 0;
+                            top: 0;
+                            z-index: 2;
+                        }
+                        .g__img2 {
+                            width: 250px;
+                            right: 0;
+                            top: 15%;
+                            height: 200px;
+                            opacity: 0.3;
+                        }
+                        .g__img3 {
+                            width: 250px;
+                            left: 20%;
+                            top: 40%;
+                            z-index: 2;
+                        }
+                    }
+                    .g__expectations {
+                        p {
+                            width: 60%;
+                        }
+                    }
+                }
+                .side__img {
+                    display: none;
+                }
+            }
+            .g__long-text {
+                display: none;
+            }
+        }
+    }
+}
+
