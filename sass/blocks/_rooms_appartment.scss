@@ -1,1 +1,160 @@
 // Merojiddin
+@font-face {
+    font-family: Miracle;
+    src: url("../../font/Miracle.otf");
+}
+
+h1, h2{
+    font-family: 'Miracle';
+}
+
+.rooms{
+    max-width: 1440px;
+    margin: 250px auto;
+    padding: 0 20px;
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        &__title{
+            color: #1B3B36;
+            font-size: 125px;
+            line-height: 105px; /* 86.667% */
+            text-transform: uppercase;
+        }
+        &__desc{
+            color: #1B3B36;
+            font-family: Helvetica;
+            font-size: 18px;
+            text-transform: uppercase;
+            max-width: 30%;
+        }
+    }
+    &-body{
+        display: flex;
+        gap: 10%;
+        margin-top: 144px;
+        &__left{
+            display: flex;
+            max-width: 50%;
+            gap: 100px;
+            &-imgs{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .rooms-body__left-img{
+                    max-width: 250px;
+                }
+                .btn-right{
+                    margin-top: 100%;
+                    width: 170px;
+                    border: none;
+                    background: transparent;
+                }
+            }
+            &-infos{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: start;
+                .btn-since{
+                    border-radius: 99px;
+                    border: 1px solid  #313f387b;
+                    background: transparent;
+                    padding: 10px 30px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .rooms-body__subtitle{
+                    color: #1B3B36;
+                    font-size: 36px;
+                    letter-spacing: 1.08px;
+                    text-transform: capitalize;
+                    margin-bottom: 40px;
+                }
+                .rooms-body__comm{
+                    color: #1B3B36;
+                    font-family: Helvetica;
+                    font-size: 18px;
+                    line-height: 28px; /* 155.556% */
+                }
+            }
+        }
+    }
+    &-right{
+        width: 50%;
+        background-image: url('../../images/rooms-img2.png');
+        background-size: cover;
+    }
+    &-page{
+        text-align: center;
+        margin-top: 80px;
+        color: #1B3B36;
+        font-family: Helvetica Neue LT Std;
+        font-size: 22px;
+        & span{
+            color: rgba(27, 59, 54, 0.32);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .rooms{
+        &-header{
+            &__title{
+                font-size: 100px;
+            }
+            &__desc{
+                font-size: 16px;
+            }
+        }
+        &-body{
+            &__left{
+                &-img{
+                    display: none;
+                }
+            }
+            .btn-since{
+                display: none;
+            }
+            .rooms-body__comm{
+                font-size: 13px;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .rooms{
+        padding: 0 9px;
+        &-header{
+            flex-direction: column;
+            &__title{
+                font-size: 60px;
+                line-height: 60px;
+            }
+            &__desc{
+                margin-top: 50px;
+                max-width: 50%;
+                font-size: 12px;
+            }
+        }
+        &-body{
+            flex-direction: column-reverse;
+            &__left{
+                gap: 10px;
+                &-imgs{
+                .btn-right, .btn-right svg{
+                    width: 70px;
+                    // margin-top: 100px;
+                }
+            }
+        }
+        }
+        &-right{
+            width: 100%;
+            height: 450px;
+        }
+    }
+}
